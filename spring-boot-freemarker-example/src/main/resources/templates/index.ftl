@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Spring Boot FreeMarker example - viralpatel.net</title>
-	
-	<link href="/bootstrap/4.0.0-beta/css/bootstrap.min.css"
-		rel="stylesheet">
+<title>Spring Boot FreeMarker example - viralpatel.net</title>
 
-	<style>
-	.container {
-		margin-top: 80px;
-	}
-	
-	.bg-dark {
-		background-color: #3b8dbd !important;
-	}
-	</style>
+<link href="/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+	rel="stylesheet">
+
+<style>
+.container {
+	margin-top: 80px;
+}
+
+.bg-dark {
+	background-color: #3b8dbd !important;
+}
+</style>
 </head>
 <body>
 
@@ -30,40 +30,27 @@
 
 	</nav>
 	<div class="container">
-		<form class="form-horizontal" method="post" action="/add">
-			<fieldset>
-				<legend>Customer details</legend>
-				<div class="form-group">
-					<label class="col-sm-4 control-label" for="customerName">Customer
-						name</label>
-					<div class="col-sm-4">
-						<input id="customerName" name="customerName" type="text"
-							class="form-control form-control-sm" required="">
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="col-sm-4 control-label" for="email">Email</label>
-					<div class="col-sm-4">
-						<input id="email" name="email" type="text"
-							class="form-control form-control-sm" required="">
-					</div>
-				</div>
-				<div class="form-group">
-					<label class="col-sm-4 control-label" for="dateOfBirth">Date
-						of birth</label>
-					<div class="col-sm-4">
-						<input id="dateOfBirth" name="dateOfBirth" type="date"
-							class="form-control form-control-sm">
-					</div>
-				</div>
-				<div class="form-group">
-					<div class="col-sm-4">
-						<button id="save" name="save" class="btn btn-primary">Add</button>
-					</div>
-				</div>
-			</fieldset>
+
+		<form class="form-inline" method="post" action="/add">
+			<input
+				type="text" class="form-control mb-2 mr-sm-2 mb-sm-0"
+				id="customerName" name="customerName" placeholder="Customer name" />
+				
+			
+			<input
+				type="text"  class="form-control mb-2 mr-sm-2 mb-sm-0" id="email"
+				placeholder="Email" name="email" /> 
+				
+				
+			<input type="date"
+				 class="form-control mb-2 mr-sm-2 mb-sm-0" id="dateOfBirth"
+				placeholder="Birthdate" name="dateOfBirth" />
+
+
+			<button type="submit" class="btn btn-primary">Add</button>
 		</form>
 
+		<br/>
 		<table class="table">
 			<thead>
 				<tr>
