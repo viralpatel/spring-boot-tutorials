@@ -19,7 +19,7 @@
 <body>
 
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-		<a class="navbar-brand" href="viralpatel.net">Spring Boot
+		<a class="navbar-brand" href="https://www.viralpatel.net">Spring Boot
 			FreeMarker example - viralpatel.net</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse"
 			data-target="#navbarsExampleDefault"
